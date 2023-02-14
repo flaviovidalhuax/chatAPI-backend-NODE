@@ -33,3 +33,5 @@ const initModels = () => {
 }
 
 module.exports = initModels
+
+//! https://dbdiagram.io/d/63e5c3ed296d97641d7fe0a7

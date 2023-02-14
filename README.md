@@ -1,5 +1,8 @@
 Punto de partida
 
+### Url githu   https://github.com/flaviovidalhuax/chatAPI-backend-NODE
+### url dbDiagram https://dbdiagram.io/d/63e5c3ed296d97641d7fe0a7
+
 Cuando queremos recuperar una contraseña hago una peticion que me pide el email
 
 /api/v1/auth/recovery-password
