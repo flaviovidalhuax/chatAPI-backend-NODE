@@ -15,23 +15,22 @@ Cuando queremos recuperar una contraseña hago una peticion que me pide el email
     - cuando mandamos la nueva contraseña pasan 2 cosas
         - Se modifica la contraseña en el usuario
         - Se modifica el recoveryToken como ya usado, para que no se pueda volver a utilizar
+- /api/v1/users
+    - get('/')
+    - post('/')
+- /api/v1/users/me
+    - get()
+    - patch()
+    - delete()
+    - /api/v1/users/:id
+    - get()
+    - patch()
+    - delete()
 
-###/api/v1/users
-    get('/')
-    post('/')
-    ###/api/v1/users/me
-    get()
-    patch()
-    delete()
-    ###/api/v1/users/:id
-    get()
-    patch()
-    delete()
+- /api/v1/auth
+    - /login
+    - /recovery-password
 
-###/api/v1/auth
-    /login
-    /recovery-password
-
-###/api/v1/conversations
-    get('/')
-    post('/')
+- /api/v1/conversations
+    - get('/')
+    - post('/')
