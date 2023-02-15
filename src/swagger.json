@@ -1,0 +1,40 @@
+{
+    "swagger":"2.0",
+    "info":{
+        "description":"Tis Api is un exapmple de un chat of conversation. You could use his service in read more about this Api [http://localhost:9000/api/v1/docs] this page discribe how use all tags and verb to acction",
+        "version":"1.0",
+        "title":"SWAGER CHAT",
+        "contact":{
+            "email":"flaviovidalhuax@gmial.com",
+            "phone":"5521159387"
+        }
+    },
+    "host":"http://localhost:9000",
+    "tags":[
+        {
+            "name":"users",
+            "description":"all users in this Api",
+            "externalDocs":{
+                "description":"find out more",
+                "url":"http://localhost:9000/api/v1/users"
+            }
+        }
+    ],
+    "paths":{
+        "/api/v1/users":{
+            "get":{
+                "responces":{
+                    "200":{
+                        "description":"successful operation"         
+                    },
+                    "400":{
+                        "description":"Invalid peticion"
+                    }
+                }
+
+            }
+        }
+    }
+
+    
+}

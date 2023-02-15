@@ -1,6 +1,8 @@
 //? Dependencies
 const express = require('express')
 const cors = require('cors')
+const swaggerUI= require('swagger-ui-express')
+const swaggerDoc=require('./swagger.json')
 
 //? Files
 const config = require('../config')
@@ -44,6 +46,7 @@ app.get('/', (req, res) => {
 app.use('/api/v1/users', userRouter)
 app.use('/api/v1/auth', authRouter)
 app.use('/api/v1/conversations', conversationRouter)
+app.use('/api/v1/docs', swaggerUI.serve, swaggerUI.setup(swaggerDoc))
 
 app.listen(config.api.port, () => {
     console.log(`Server started on ${config.api.host}`)
